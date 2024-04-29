@@ -1,4 +1,5 @@
 const clock=document.getElementById('clock')
+
 // const clock = document.queryselector('#clock')
 
 

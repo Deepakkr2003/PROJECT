@@ -7,27 +7,26 @@
     <link rel="stylesheet" href="../bmi.css"/>
     <title>BMI Calculator</title>
 </head>
-<body>
-    <nav>
-        <a href="/" aria-current="page">Home</a>
-        <a target="_blank" href="https://www.youtube.com/@chaiaurcode">Youtube channel</a>
-    </nav>
-    <div class="container">
-        <h1>BMI Calculator</h1>
-        <form>
-            <p><label>Height in CM: </label><input type="text" 
-            id="height"/></p>
-            <p><label>Weight in KG: </label><input type="text" 
-            id="weight"/></p>
-            <button>Calculate</button>
-            <div id="results"></div>
-            <div id="weight-guide">
-                <h3>BMI Weight Guide</h3>
-                <p>Under Weight = Less than 18.6</p>
-                <p>Normal Range = 18.6 and 24.9</p>
-                <p>Overweight = Greater than 24.9</p>
-            </div>
-        </form>
+<body style="background-color: blanchedalmond;">
+    
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 150px;">
+        <div class="container">
+            <h1 style="color:green;">BMI Calculator</h1>
+            <form>
+                <p><label style="color: rgb(20, 177, 239);">Height in CM:</label><input type="text" id="height"/></p>
+    
+                <p><label style="color: rgb(20, 177, 239);">Weight in KG: </label><input type="text" 
+                id="weight"/></p>
+                <button>Calculate</button>
+                <div id="results"></div>
+                <div id="weight-guide">
+                    <h3>BMI Weight Guide</h3>
+                    <p>Under Weight = Less than 18.6</p>
+                    <p>Normal Range = 18.6 and 24.9</p>
+                    <p>Overweight = Greater than 24.9</p>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 <script src="bmi.js"></script>
