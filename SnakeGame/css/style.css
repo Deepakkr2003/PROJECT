@@ -71,3 +71,20 @@ img{
     width: auto;
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 768px) {
+    #scoreBox,
+    #hiscoreBox {
+        font-size: 5vw; /* Adjust font size for smaller devices */
+    }
+
+    .head {
+        border: 3vw solid rgb(241, 23, 92); /* Adjust border width for smaller devices */
+        border-radius: 5vw; /* Adjust border radius for smaller devices */
+    }
+
+    img {
+        height: 15vw; /* Adjust height for smaller devices */
+    }
+}
