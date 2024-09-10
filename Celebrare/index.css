@@ -1,0 +1,515 @@
+/* Base styles */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+body {
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.first,
+.img2 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.img2 {
+    height: 100vh;
+    border-radius: 4%;
+}
+
+.reg1 {
+    margin: 0px;
+    line-height: 1;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.reg2 {
+    margin: 0;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.tex {
+    font-size: 18px;
+    color: gray;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: white;
+    border: 0.5px solid greenyellow;
+    outline-style: solid;
+    outline-color: gray;
+    color: green;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    text-align: center;
+}
+
+h1,
+h2 {
+    margin: 10px 0;
+}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.un,
+.pw {
+    width: 350px;
+    padding: 12px;
+    margin: 8px 0;
+    display: block;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.un:focus,
+.pw:focus {
+    border-color: green;
+    outline: none;
+}
+
+.wn {
+    font-size: 40px;
+}
+
+.sn {
+    font-size: 15px;
+    font-weight: normal;
+    color: grey;
+    margin-top: 0;
+}
+
+.ln {
+    color: white;
+    background-color: rgba(128, 128, 128, 0.5);
+    font-weight: bold;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 390px;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    text-align: left;
+    margin-right: 70px;
+    width: 80%;
+    cursor: pointer;
+}
+
+.ln:hover {
+    background-color: rgb(24, 119, 11);
+}
+
+.in {
+    width: 14px;
+    height: 14px;
+    transform: scale(1.5);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.psw {
+    display: inline-block;
+    margin: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(24, 119, 11);
+    cursor: pointer;
+}
+
+.psw:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.f1,
+.f2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.f1 {
+    padding-top: 100px;
+    gap: 48px;
+}
+
+.f2 {
+    gap: 20px;
+}
+
+.text {
+    font-size: 10px;
+    color: grey;
+}
+
+.text1 {
+    font-size: 10px;
+    color: green;
+}
+
+.enroll-btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: green;
+    font-weight: bold;
+    font-size: 12px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+li::before {
+    content: "✓";
+    color: #2ecc71;
+    border: 2px solid #4CAF50;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+}
+
+.enroll-row {
+    position: relative;
+}
+
+.enrollment-container {
+    display: none;
+    background-color: #2a2a2a;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+    position: absolute;
+    width: 300px;
+    top: 100%;
+    right: 0;
+    margin-right: 6px;
+    z-index: 1000;
+}
+
+.en {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #fff;
+}
+
+input[type="checkbox"].in {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 80%;
+}
+
+.checkbox-custom {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    margin-right: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+input[type="checkbox"].in:checked+.checkbox-custom {
+    background-color: white;
+    border-color: green;
+}
+
+input[type="checkbox"].in:checked+.checkbox-custom::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 8px;
+    height: 16px;
+    border: solid green;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#logo {
+    position: absolute;
+    top: 65px;
+    left: 20px;
+    width: 60px;
+    height: 40px;
+    transition: all 1s ease-in-out;
+    z-index: 10;
+}
+
+@keyframes moveToCenter {
+    0% {
+        top: 42px;
+        left: 8px;
+        transform: scale(1) rotate(180deg);
+    }
+    100% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(2) rotate(360deg);
+    }
+}
+
+.animate {
+    animation: moveToCenter 1s ease-in-out forwards;
+}
+
+.hide-content {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.img4 {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+@keyframes zoomFromCenterWithMargin {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0;
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+        border-radius: 15px;
+    }
+}
+
+.fullscreen-img4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    z-index: 1;
+    animation: zoomFromCenterWithMargin 2s ease-in-out forwards;
+    border-radius: 15px;
+}
+
+.white-circle {
+    background-color: white;
+    border-radius: 50%;
+    padding: 20px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Responsive styles */
+@media (max-width: 1440px) {
+    .btn, .ln, .enroll-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    .un, .pw {
+        width: 300px;
+    }
+
+    .footer {
+        margin-top: 24px;
+    }
+
+    .text, .text1 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .main {
+        flex-direction: column;
+    }
+
+    .first, .img2 {
+        padding: 0;
+    }
+
+    .form {
+        padding-top: 50px;
+    }
+
+    .un, .pw {
+        width: 280px;
+    }
+
+    .ln {
+        width: 100%;
+    }
+
+    .checkbox-custom {
+        width: 20px;
+        height: 20px;
+    }
+
+    .white-circle {
+        padding: 10px;
+    }
+
+    .fullscreen-img4 {
+        width: 60%;
+        height: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn, .ln, .enroll-btn {
+        width: 100%;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .un, .pw {
+        width: 100%;
+    }
+
+    .form {
+        padding-top: 20px;
+    }
+
+    .white-circle {
+        padding: 10px;
+        width: 80%;
+        height: auto;
+    }
+
+    .fullscreen-img4 {
+        width: 80%;
+        height: auto;
+    }
+
+    .text, .text1 {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn, .ln, .enroll-btn {
+        padding: 6px;
+        font-size: 10px;
+    }
+
+    .un, .pw {
+        width: 100%;
+    }
+
+    .form {
+        padding-top: 10px;
+    }
+
+    .white-circle {
+        padding: 5px;
+    }
+
+    .fullscreen-img4 {
+        width: 90%;
+        height: auto;
+    }
+}
