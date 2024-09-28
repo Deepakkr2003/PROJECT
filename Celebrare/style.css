@@ -186,7 +186,7 @@ label {
 }
 
 .f1 {
-    padding-top: 100px;
+    padding-top: 10px;
     gap: 48px;
 }
 
@@ -394,122 +394,155 @@ input[type="checkbox"].in:checked+.checkbox-custom::after {
     transition: opacity 1s ease-in-out;
 }
 
-/* Responsive styles */
-@media (max-width: 1440px) {
-    .btn, .ln, .enroll-btn {
-        padding: 8px 16px;
-        font-size: 14px;
+
+/* Responsive code */
+@media (max-width: 1024px) {
+    body {
+        margin: 40px;
     }
-    
-    .un, .pw {
-        width: 300px;
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .first,
+    .second {
+        width: 48%;
+        padding: 0;
+        margin: 1%;
+    }
+
+    .reg1 {
+        font-size: 20px;
+    }
+
+    .reg2,
+    .tex,
+    .sn {
+        font-size: 16px;
+    }
+
+    .un,
+    .pw {
+        width: 90%;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .btn,
+    .enroll-btn,
+    .ln {
+        width: auto;
+        padding: 10px 15px;
+        margin: 10px auto;
     }
 
     .footer {
-        margin-top: 24px;
-    }
-
-    .text, .text1 {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .container {
-        padding: 0 10px;
-    }
-    
-    .main {
-        flex-direction: column;
-    }
-
-    .first, .img2 {
-        padding: 0;
-    }
-
-    .form {
-        padding-top: 50px;
-    }
-
-    .un, .pw {
-        width: 280px;
-    }
-
-    .ln {
-        width: 100%;
-    }
-
-    .checkbox-custom {
-        width: 20px;
-        height: 20px;
-    }
-
-    .white-circle {
-        padding: 10px;
-    }
-
-    .fullscreen-img4 {
-        width: 60%;
-        height: 60%;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 0;
+        min-height: 50px;
     }
 
-    .btn, .ln, .enroll-btn {
-        width: 100%;
-        padding: 8px;
-        font-size: 12px;
+    .f1, .f2 {
+        gap: 15px;
+        flex-direction: row;
     }
 
-    .un, .pw {
-        width: 100%;
+    .logo {
+        padding-top: 10px;
+        margin-bottom: 15px;
     }
+    
+}
 
-    .form {
-        padding-top: 20px;
+@media (min-width: 720px) { 
+    .f1 {
+        padding-top: 100px;
     }
-
-    .white-circle {
-        padding: 10px;
-        width: 80%;
-        height: auto;
+    .container {
+        padding-left:  36px; 
+        margin-top: 10px; 
     }
-
-    .fullscreen-img4 {
-        width: 80%;
-        height: auto;
+}
+@media (min-width: 1025px) { 
+    .form{
+        margin-top: 64px;
     }
-
-    .text, .text1 {
-        font-size: 10px;
+    .container {
+        padding-left:  16px; 
+        margin-top: -4px; 
     }
 }
 
 @media (max-width: 480px) {
-    .btn, .ln, .enroll-btn {
-        padding: 6px;
-        font-size: 10px;
+    body {
+        margin: 10px;
     }
 
-    .un, .pw {
-        width: 100%;
+    h1,
+    h2 {
+        font-size: 22px;
+        text-align: center;
     }
 
-    .form {
-        padding-top: 10px;
+    .un,
+    .pw,
+    .ln {
+        width: 95%;
+        padding: 12px;
+        margin: 8px auto;
+    }
+
+    .tex {
+        font-size: 14px;
+        margin-right: 5px;
     }
 
     .white-circle {
-        padding: 5px;
-    }
-
-    .fullscreen-img4 {
-        width: 90%;
+        padding: 2px;
+        width: auto;   
         height: auto;
     }
+    
+    .logo {
+        margin-bottom: 15px; 
+    }
+    
+    /* .container {
+        padding: 0 15px; 
+        margin-top: 10px; 
+    } */
 }
+
+@media (max-width: 426px) {
+    .main {
+        flex-direction: column; 
+    }
+
+    .first,
+    .second {
+        width: 100%; 
+        margin: 2px 0; 
+    }
+    .container{
+        padding-left: 48px;
+    }
+    #logo{
+        margin-top: -36px;
+        margin-left: -12px;
+        height: 36px;
+        width: 48px;
+    }
+}
+
+
+
+
+
